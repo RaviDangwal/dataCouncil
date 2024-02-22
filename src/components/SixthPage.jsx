@@ -20,14 +20,21 @@ const SixthPage = () => {
     },
   ];
   return (
-    <div>
-      <div className="m-4 ml-36 mt-10">
-        <h1 className="font-semibold">Skill-Lync in News </h1>
+    <div className="m-10 sm:mx-10">
+      <div className="mt-10 sm:mt-0 sm:ml-36">
+        <h1 className="font-semibold">Data Council in News </h1>
         <h1 className="font-bold text-4xl">Media Spotlight</h1>
       </div>
-      <div className="flex flex-row justify-center mt-10">
+
+      <div className="flex flex-col sm:flex-row justify-center mt-10 space-x-4 space-y-4">
         {mediaList.map((li) => (
-          <MediaCard key={li.name} name={li.name} para={li.para} img={li.url} />
+          <MediaCard
+            key={li.name}
+            name={li.name}
+            para={li.para}
+            img={li.url}
+            className="max-w-sm"
+          />
         ))}
       </div>
     </div>

@@ -3,7 +3,7 @@ import { COMPANIES_LIST } from "../utils/constants";
 
 const SecondPg = () => {
   return (
-    <div className="flex flex-row justify-around">
+    <div className="flex sm:flex-row sm:justify-around flex-col ">
       <div className="m-16 ">
         <h1 className="text-4xl font-semibold">
           <span className="text-blue-700">Placement</span> Opportunities
@@ -16,8 +16,8 @@ const SecondPg = () => {
           Hiring Companies
         </button>
       </div>
-      <div className="w-[36rem] ">
-        <img src={COMPANIES_LIST} alt="" />
+      <div className="sm:w-[36rem]">
+        <img src={COMPANIES_LIST} alt="company" />
       </div>
     </div>
   );

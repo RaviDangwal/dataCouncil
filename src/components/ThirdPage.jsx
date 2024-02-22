@@ -16,7 +16,7 @@ const ThirdPage = () => {
     {
       img: "https://skill-lync.com/nsimages/svg/tick_icon.webp",
       rating: "Finish",
-      para: "Build your Skill-Lync profile by completing the projects.",
+      para: "Build your Data Council profile by completing the projects.",
     },
     {
       img: "https://skill-lync.com/nsimages/svg/bag_icon.webp",
@@ -25,11 +25,11 @@ const ThirdPage = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-r from-gray-950 via-gray-800 to-gray-900 text-white flex flex-col items-center mt-20 ">
+    <div className="  flex flex-col items-center mt-20 ">
       <div className="">
         <h1 className="text-4xl font-bold mt-10">How to get there?</h1>
       </div>
-      <div className="flex flex-row mt-10 mb-10">
+      <div className="flex sm:flex-row flex-col mt-10 mb-10 ">
         {dataList.map((da) => (
           <Cards name={da.name} key={da.name} img={da.img} para={da.para} />
         ))}

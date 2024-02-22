@@ -3,7 +3,7 @@ import { LOGO } from "../utils/constants";
 
 const Header = () => {
   return (
-    <div className="flex flex-row items-center justify-between shadow-lg">
+    <div className="flex flex-row items-center justify-between shadow-lg sm:w-full w-screen ">
       <div className="">
         <img
           className="w-24 ml-4 cursor-pointer "
@@ -11,7 +11,7 @@ const Header = () => {
           alt="Data Council"
         />
       </div>
-      <div className="">
+      <div className=" sm:block hidden">
         <ul className="flex flex-row ">
           <li className=" m-2 bg-slate-950 shadow-lg text-white hover:bg-white hover:text-black p-3 px-6 rounded-md cursor-pointer transition-colors duration-300 ease-in-out">
             Courses
@@ -31,7 +31,7 @@ const Header = () => {
           <li className="p-3 m-2 cursor-pointer hover:text-blue-600 hover:underline">
             More
           </li>
-          <li className="m-3">
+          <li className="m-3 sm:block hidden">
             <input
               type="text"
               placeholder="search"
@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
       </div>
       <div>
-        <button className="mr-6 bg-slate-950 shadow-lg text-white hover:bg-white hover:text-black p-2 rounded-md transition-colors duration-300 ease-in-out px-4">
+        <button className="mr-6 bg-slate-950 shadow-lg text-white sm:hover:bg-white sm:hover:text-black p-2 rounded-md transition-colors duration-300 ease-in-out px-4">
           Login
         </button>
       </div>
